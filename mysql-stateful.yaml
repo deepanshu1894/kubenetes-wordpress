@@ -17,9 +17,7 @@ spec:
     spec:
       containers:
       - name: database
-        image: mysql:5.7
-        args:
-          - "--ignore-db-dir=lost+found"
+        image: mysql:8.0
         envFrom:
           - secretRef:
               name: mysql-secret
